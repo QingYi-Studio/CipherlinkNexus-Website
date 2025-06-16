@@ -27,9 +27,9 @@ func main() {
 	})
 
 	// 版本信息端点
-	r.GET("/appversion", func(c *gin.Context) {
+	r.GET("/version/core", func(c *gin.Context) {
 		// 获取version.json的绝对路径
-		versionFile := filepath.Join("config", "version.json")
+		versionFile := filepath.Join("versions", "core.json")
 
 		// 读取文件内容
 		data, err := ioutil.ReadFile(versionFile)
