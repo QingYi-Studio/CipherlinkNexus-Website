@@ -1,0 +1,17 @@
+{
+    "latest": "v0.1.0-beta.1",
+    "versions": [
+        {
+            "version": "v0.1.0-beta.1",
+            "releaseDate": "2025-04-25",
+            "isLatest": true,
+            "status": "beta",
+            "downloadUrl": "unknown",
+            "changelog": [
+                "初始版本发布",
+                "基础功能实现",
+                "界面优化"
+            ]
+        }
+    ]
+}
