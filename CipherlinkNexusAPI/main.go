@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"github.com/gin-gonic/gin"
-	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"path/filepath"
 )
 
@@ -32,7 +32,7 @@ func main() {
 		versionFile := filepath.Join("versions", "core.json")
 
 		// 读取文件内容
-		data, err := ioutil.ReadFile(versionFile)
+		data, err := os.ReadFile(versionFile)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{
 				"error": "无法读取版本信息文件",
