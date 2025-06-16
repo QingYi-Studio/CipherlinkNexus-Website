@@ -24,7 +24,7 @@ func SetupRouter() *gin.Engine {
 	})
 
 	// 注册路由
-	r.GET("/appversion", handlers.GetVersionInfo)
+	r.GET("/version/core", handlers.GetVersionInfo)
 
 	return r
 }
